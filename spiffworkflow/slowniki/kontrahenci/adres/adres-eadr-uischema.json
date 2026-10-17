@@ -1,0 +1,65 @@
+{
+  "ui:order": [
+    "Adres",
+    "Nazwa/Nazwisko",
+    "ADE",
+    "Adres 2",
+    "Firma",
+    "tytuł",
+    "Nazwisko",
+    "Imię",
+    "Forma prawna",
+    "Przypisany operator",
+    "Aktywny",
+    "ID",
+    "Adres do korespondencji"
+  ],
+  "Adres": {
+    "ui:order": [
+      "NIP",
+      "regon",
+      "KRS",
+      "PESEL"
+    ]
+  },
+  "Nazwa/Nazwisko": {
+    "ui:readonly": true
+  },
+  "ADE": {
+    "ui:help": "Adres Doręczeń Elektronicznych"
+  },
+  "Adres 2": {
+    "ui:order": [
+      "miejscowość",
+      "ulica",
+      "numer domu",
+      "mieszkanie",
+      "kod pocztowy",
+      "poczta",
+      "ważny od",
+      "to jest główny adres"
+    ],
+    "numer domu": {
+      "ui:help": "Obowiązkowe przy wyszukiwaniu!!"
+    }
+  },
+  "ID": {
+    "ui:readonly": true
+  },
+  "Adres do korespondencji": {
+    "ui:order": [
+      "typ",
+      "rodzaj ulicy",
+      "ulica",
+      "numer domu",
+      "mieszkanie",
+      "poczta",
+      "kod pocztowy",
+      "miejscowość",
+      "województwo",
+      "gmina",
+      "powiat",
+      "państwo"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Kategoria sprawy-DOKS-IT",
+  "description": "Proces: SLDS - Kategorie spraw; Obieg: Kategoria sprawy; Typ dokumentu: DOKS-IT - Kategoria sprawy",
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "string",
+      "title": "ID",
+      "readOnly": true,
+      "x-permissions": {
+        "Krok słownikowy": "readonly"
+      }
+    },
+    "Nazwa": {
+      "type": "string",
+      "title": "Nazwa",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      },
+      "x-required-in-steps": [
+        "Krok słownikowy"
+      ]
+    },
+    "Opis": {
+      "type": "string",
+      "title": "Opis",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Aktywny": {
+      "type": "boolean",
+      "title": "Aktywny",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Dział": {
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "0",
+          "title": "-"
+        },
+        {
+          "const": "1",
+          "title": "DZ1K"
+        },
+        {
+          "const": "2",
+          "title": "DZ2"
+        },
+        {
+          "const": "3",
+          "title": "DZ3"
+        }
+      ],
+      "title": "Dział",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      },
+      "x-required-in-steps": [
+        "Krok słownikowy"
+      ]
+    },
+    "Klasyfikacja dokumentów": {
+      "type": "object",
+      "properties": {
+        "JRWA": {
+          "type": "string",
+          "title": "JRWA",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "Kategoria arciwizacji": {
+          "type": "string",
+          "title": "Kategoria arciwizacji",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        }
+      },
+      "title": "Klasyfikacja dokumentów",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    }
+  },
+  "required": [
+    "Nazwa",
+    "Dział"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Słownik tematów-ST",
+  "description": "Proces: ST - Słownik tematów (ID: 330); Obieg: Słownik tematów (ID: 378); Typ dokumentu: ST - Słownik tematów (ID: 489)",
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "string",
+      "title": "ID",
+      "readOnly": true,
+      "x-permissions": {
+        "Krok słownikowy": "readonly"
+      }
+    },
+    "Nazwa": {
+      "type": "string",
+      "title": "Nazwa",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      },
+      "x-required-in-steps": [
+        "Krok słownikowy"
+      ]
+    },
+    "Opis": {
+      "type": "string",
+      "title": "Opis",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Aktywny": {
+      "type": "boolean",
+      "title": "Aktywny",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    }
+  },
+  "required": [
+    "Nazwa"
+  ]
+}

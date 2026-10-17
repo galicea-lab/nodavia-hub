@@ -1,0 +1,42 @@
+{
+  "title": "Dostawcy usług podpisu elektronicznego",
+  "description": "Dostawcy usług podpisu elektronicznego — słownik (rejestr danych referencyjnych). Zawartość listy wartości należy uzupełnić w aplikacji.",
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "string",
+      "title": "ID",
+      "readOnly": true,
+      "x-permissions": {
+        "Krok słownikowy": "readonly"
+      }
+    },
+    "Nazwa": {
+      "type": "string",
+      "title": "Nazwa",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      },
+      "x-required-in-steps": [
+        "Krok słownikowy"
+      ]
+    },
+    "Opis": {
+      "type": "string",
+      "title": "Opis",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Aktywny": {
+      "type": "boolean",
+      "title": "Aktywny",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    }
+  },
+  "required": [
+    "Nazwa"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "ui:order": [
+    "ID",
+    "Nazwa",
+    "Opis",
+    "Aktywny",
+    "Dział",
+    "Klasyfikacja dokumentów"
+  ],
+  "ID": {
+    "ui:readonly": true
+  },
+  "Klasyfikacja dokumentów": {
+    "ui:order": [
+      "JRWA",
+      "Kategoria arciwizacji"
+    ],
+    "JRWA": {
+      "ui:widget": "AsyncSelectWidget",
+      "ui:options": {
+        "endpoint": "/v1/wf/dictionaries/ezd-jrwa",
+        "sourceName": "[EZD] JRWA",
+        "sourceType": "Baza MSSQL"
+      }
+    },
+    "Kategoria arciwizacji": {
+      "ui:widget": "AsyncSelectWidget",
+      "ui:options": {
+        "endpoint": "/v1/wf/dictionaries/ezd-kategoria-archiwizacji",
+        "sourceName": "[EZD] Kategoria archiwizacji",
+        "sourceType": "Baza MSSQL"
+      }
+    }
+  }
+}

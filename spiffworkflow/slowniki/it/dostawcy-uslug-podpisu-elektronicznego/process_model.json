@@ -1,0 +1,9 @@
+{
+    "description": "Dostawcy usług podpisu elektronicznego — słownik (rejestr danych referencyjnych), bez przepływu akceptacji. Proces celowo nie zawiera zdarzenia końcowego (endEvent): krok „Krok słownikowy” tylko zapisuje rekord i wraca do edycji.",
+    "display_name": "Dostawcy usług podpisu elektronicznego",
+    "exception_notification_addresses": [],
+    "fault_or_suspend_on_exception": "fault",
+    "metadata_extraction_paths": null,
+    "primary_file_name": "dostawcy-uslug-podpisu-elektronicznego.bpmn",
+    "primary_process_id": "Process_Dostawcy_Uslug_Podpisu_Elektronicznego"
+}

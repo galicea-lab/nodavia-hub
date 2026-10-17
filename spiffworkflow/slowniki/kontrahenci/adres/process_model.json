@@ -1,0 +1,10 @@
+{
+    "key": "adres-e-doreczen",
+    "description": "Adres — słownik (rejestr danych referencyjnych), bez przepływu akceptacji. Proces celowo nie zawiera zdarzenia końcowego (endEvent): krok „Krok słownikowy” tylko zapisuje rekord i wraca do edycji.",
+    "display_name": "Adres",
+    "exception_notification_addresses": [],
+    "fault_or_suspend_on_exception": "fault",
+    "metadata_extraction_paths": null,
+    "primary_file_name": "adres.bpmn",
+    "primary_process_id": "Process_Adres"
+}

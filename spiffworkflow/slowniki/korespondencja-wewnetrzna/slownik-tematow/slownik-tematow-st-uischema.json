@@ -1,0 +1,11 @@
+{
+  "ui:order": [
+    "ID",
+    "Nazwa",
+    "Opis",
+    "Aktywny"
+  ],
+  "ID": {
+    "ui:readonly": true
+  }
+}

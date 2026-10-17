@@ -1,0 +1,12 @@
+{
+  "ui:order": [
+    "ID",
+    "Nazwa",
+    "Dziekan Wydziału",
+    "Aktywny",
+    "email Dziekana"
+  ],
+  "ID": {
+    "ui:readonly": true
+  }
+}

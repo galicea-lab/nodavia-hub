@@ -1,0 +1,49 @@
+{
+  "title": "Wydziały",
+  "description": "Formularz - Wydziały; Obieg: Wydziały; Typ dokumentu:  Wydziały",
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "string",
+      "title": "ID",
+      "readOnly": true,
+      "x-permissions": {
+        "Krok słownikowy": "readonly"
+      }
+    },
+    "Nazwa": {
+      "type": "string",
+      "title": "Nazwa",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      },
+      "x-required-in-steps": [
+        "Krok słownikowy"
+      ]
+    },
+    "Dziekan Wydziału": {
+      "type": "string",
+      "title": "Dziekan Wydziału",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Aktywny": {
+      "type": "boolean",
+      "title": "Aktywny",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "email Dziekana": {
+      "type": "string",
+      "title": "email Dziekana",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    }
+  },
+  "required": [
+    "Nazwa"
+  ]
+}

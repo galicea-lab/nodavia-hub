@@ -1,0 +1,275 @@
+{
+  "title": "Adres-EADR",
+  "description": "Proces: ADE - Adres e-Doręczeń (ID: 202); Obieg: Adres (ID: 241); Typ dokumentu: EADR - Adres (ID: 312)",
+  "type": "object",
+  "properties": {
+    "Adres": {
+      "type": "object",
+      "properties": {
+        "NIP": {
+          "type": "string",
+          "title": "NIP",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "regon": {
+          "type": "string",
+          "title": "regon",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "KRS": {
+          "type": "string",
+          "title": "KRS",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "PESEL": {
+          "type": "string",
+          "title": "PESEL",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        }
+      },
+      "title": "Adres",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Nazwa/Nazwisko": {
+      "type": "string",
+      "title": "Nazwa/Nazwisko",
+      "readOnly": true,
+      "x-permissions": {
+        "Krok słownikowy": "readonly"
+      }
+    },
+    "ADE": {
+      "type": "string",
+      "title": "ADE",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Adres 2": {
+      "type": "object",
+      "properties": {
+        "miejscowość": {
+          "type": "string",
+          "title": "miejscowość",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "ulica": {
+          "type": "string",
+          "title": "ulica",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "numer domu": {
+          "type": "string",
+          "title": "numer domu",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "mieszkanie": {
+          "type": "string",
+          "title": "mieszkanie",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "kod pocztowy": {
+          "type": "string",
+          "title": "kod pocztowy",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "poczta": {
+          "type": "string",
+          "title": "poczta",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "ważny od": {
+          "type": "string",
+          "format": "date-time",
+          "title": "ważny od",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "to jest główny adres": {
+          "type": "boolean",
+          "title": "to jest główny adres",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        }
+      },
+      "title": "Adres",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Firma": {
+      "type": "string",
+      "title": "Firma",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "tytuł": {
+      "type": "string",
+      "title": "tytuł",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Nazwisko": {
+      "type": "string",
+      "title": "Nazwisko",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Imię": {
+      "type": "string",
+      "title": "Imię",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Forma prawna": {
+      "type": "string",
+      "title": "Forma prawna",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Przypisany operator": {
+      "type": "string",
+      "title": "Przypisany operator",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "Aktywny": {
+      "type": "boolean",
+      "title": "Aktywny",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    },
+    "ID": {
+      "type": "string",
+      "title": "ID",
+      "readOnly": true,
+      "x-permissions": {
+        "Krok słownikowy": "readonly"
+      }
+    },
+    "Adres do korespondencji": {
+      "type": "object",
+      "properties": {
+        "typ": {
+          "type": "string",
+          "title": "typ",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "rodzaj ulicy": {
+          "type": "string",
+          "title": "rodzaj ulicy",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "ulica": {
+          "type": "string",
+          "title": "ulica",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "numer domu": {
+          "type": "string",
+          "title": "numer domu",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "mieszkanie": {
+          "type": "string",
+          "title": "mieszkanie",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "poczta": {
+          "type": "string",
+          "title": "poczta",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "kod pocztowy": {
+          "type": "string",
+          "title": "kod pocztowy",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "miejscowość": {
+          "type": "string",
+          "title": "miejscowość",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "województwo": {
+          "type": "string",
+          "title": "województwo",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "gmina": {
+          "type": "string",
+          "title": "gmina",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "powiat": {
+          "type": "string",
+          "title": "powiat",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        },
+        "państwo": {
+          "type": "string",
+          "title": "państwo",
+          "x-permissions": {
+            "Krok słownikowy": "editable"
+          }
+        }
+      },
+      "title": "Adres do korespondencji",
+      "x-permissions": {
+        "Krok słownikowy": "editable"
+      }
+    }
+  }
+}
