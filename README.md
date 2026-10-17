@@ -3,7 +3,7 @@
 
 One API for many applications - central hub
 
-**Aplha Version 0.0.2**
+**Aplha Version 0.0.4**
 
 Serwis (hub integracyjny) łączący różne systemy przedsiębiorstwa/uczelni w
 jedno API REST (FastAPI). Zamiast każdej aplikacji frontendowej integrującej
@@ -193,7 +193,9 @@ alembic downgrade base && alembic upgrade head && alembic check
 
 ### Uruchomienie serwera
 ```sh
-python main.py        # uvicorn na 0.0.0.0:8086
+python main.py        
+
+# uvicorn na 0.0.0.0:8086
 ```
 albo w trybie deweloperskim z automatycznym przeładowaniem:
 ```sh
